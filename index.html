@@ -1,208 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Profil Saya</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="asset/css/styleVALUEJS.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing Page</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-      <!-- 1Untuk mengisi perubahan pada form, maka akan bisa diterapkan pada form. 
-           Mengubah Button Contact menjadi Button Edit
-           hal 1 : memberikan identitas pada setiap Komponen pada script HTML Kita
-           jadi setiap komponen kita berikan nama/id supaya lebih mudah untuk mengubah nanti. 
-       -->
-    <body>
-        <nav>
-            <div class="menu-mobile">
-                 <!-- 2tambahkan -->
-                <a href="#" onclick="showMenu()">menu</a>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#tentangSaya">Tentang Saya</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#pKerja">Pengalaman Kerja</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#pendidikan">Pendidikan</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#keahlian">Keahlian</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#interest">Ketertarikan</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#award">Penghargaan</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul id="menu">
-                <li><a href="/">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">INVENTORY</a></li>
-            </ul>
         </nav>
-
-        <section id="box-profile">
-            <div class="img-profile">
-                <div class="photo" style="background-image: url(file:///Users/swijaya/Downloads/WFDB2/portfoliotm6/asset/image/download.jpeg)">
+        <!-- Keahlian -->
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">I Komang Hendra Trinium Jaya</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Back-End Developer</p>
             </div>
-            <div class="description">
-                <!-- 2Pada bagian Nama tambahkan atribut ID. penting mudah diingat dan dipahami!! 
-                kemudian pada roles kasih nama prole, lalu 
-                pada button contact ubah nama menjadi EDIT lalu value pada ahref tambahkan inputform, 
-                save - debug 
-                pada saat klik edit akan mengarah ke form input.
-
-                next
-
-                kita kasih atribut onclick=editForm pada button edit 
-
-                -->
-                <h1 id="pName">I Komang</h1>
-                <p id="pRole">Front End Designer</p>
-                <a href="#input-form" class="button bg-blue" onclick="editForm()">Edit</a>
-                <a href="#" class="button border-green">Resume</a>
+        </header>
+          <!-- Tentang Saya Section-->
+          <section class="page-section bg-success text-white mb-0" id="tentangSaya">
+            <div class="container">
+                <!-- tentang Saya Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Tentang Saya</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- tentang Saya Section Content-->
+                <div class="row mt-5 pt-5 justify-content-center">
+                    <div class="col-lg-5 "><p class="lead">Lulusan s1 Teknik Informatika spesialis di Digital Image Processing. Memiliki pengalaman mengembangkan pengklasifikasian terhadapat gerak tari Bali</p></div>
+               
+                </div>
+             
             </div>
-            <!-- 3Pada komponent class information tambahkan juga 
-                 A. id="pAvailable" pada text-gray
-                 B. id="pAvailable" pada text-gray
-                 C. id="pAvailable" pada text-gray
-                 D. id="pAvailable" pada text-gray
-
-                 Pada section Inputform kita tambahka juga masing2 input id 
-                 A. input id=inpname
-                 A. input id=inprole
-                 A. input id=inpavailability
-                 A. input id=inpage
-                 A. input id=inplocation
-                 A. input id=inpyears
-                 A. input id=inpemail
-
-                 pada tombol submit tambahkan onclik dengan function simpanform
-
-                 save.
-
-                -->
-            <div class="information">
-                <div class="data">
-                    <p class="field">Availability</p>
-                    <p id="pAvailable" class="text-gray">Full Time</p>
+        </section>
+        <!-- Pengalaman KErja Section-->
+        <section class="page-section portfolio" id="pKerja">
+            <div class="container">
+                <!-- Pengalaman Kerja Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pengalaman Kerja</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <div class="data">
-                    <p class="field">Usia</p>
-                    <p id="pAge" class="text-gray">19</p>
+                <div class="row justify-content-center mt-5 pt-5">
+                    <div class="col-lg-7"><p class="lead">Memiliki pengalaman bekerja sebagai FullStack Developer selama 6 bulan pada tahun 2022 di sebuah software house. Berikut beberapa proyek pernah dikerjakan:</p>
+                    </div>  
+                    <div class="col-lg-7 text-left mt-4">
+                        <ul>
+                            <li><p class = "lead">Mesin Kasir</p></li>
+                            <li><p class = "lead">Undangan Digital</p></li>
+                            <li><p class = "lead">Sistem Penjadwalan</p></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="data">
-                    <p class="field">Lokasi</p>
-                    <p id="pLocation" class="text-gray">Jakarta</p>
+                
+            </div>
+        </section>
+        <!-- Pendidikan Section-->
+        <section class="page-section bg-primary text-white mb-0" id="pendidikan">
+            <div class="container">
+                <!-- Pendidikan Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Pendidikan</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <div class="data">
-                    <p class="field">Pengalaman</p>
-                    <p id="pExperience" class="text-gray">2</p>
-                </div>
-                <div class="data">
-                    <p class="field">Email</p>
-                    <p id="pEmail" class="text-gray">email@gmail.com</p>
+                <!-- Pendidikan Section Content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Timeline</h6>
+                                    <div id="content">
+                                        <ul class="timeline" style="color: black;">
+                                            <li class="event" data-date="2005-2012">
+                                                <h3>Sekolah Dasar</h3>
+                                                <p>SD Negeri 3 Tuban</p>
+                                            </li>
+                                            <li class="event" data-date="2012-2015">
+                                                <h3>Sekolah Mengengah Pertama</h3>
+                                                <p>SMP Negeri 1 Kuta Selatan</p>
+                                            </li>
+                                            <li class="event" data-date="2015-2018">
+                                                <h3>Sekolah Menengah Atas</h3>
+                                                <p>SMA Negeri 2 Kuta</p>
+                                            </li>
+                                            <li class="event" data-date="2018-2022">
+                                                <h3>Universitas</h3>
+                                                <p>Universitas Pendidikan Ganesha</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="input-form">
-            <form method="#" action="#">
-                <div class="form">
-                    <label>Nama</label>
-                    <input id="inpName" type="text" name="nama" placeholder="masukkan nama anda">
-                </div>   
-                <div class="form">
-                    <label>Role</label>
-                    <input id="inpRole" type="text" name="role">
-                </div>  
-                <div class="form">
-                    <label>Availability</label>
-                    <input id="inpAvailability" type="text" name="Availability">
-                </div>  
-                <div class="form">
-                    <label>Usia</label>
-                    <input id="inpUsia" type="number" name="usia">
-                </div>  
-                <div class="form">
-                    <label>Lokasi</label>
-                    <input id="inpLokasi" type="text" name="lokasi">
-                </div>  
-                <div class="form">
-                    <label>Years Experience</label>
-                    <input id="inpYears" type="number" name="experience">
-                </div>  
-                <div class="form">
-                    <label>Email</label>
-                    <input id="inpEmail" type="email" name="email">
-                </div>            
-                <div class="form">
-                    <input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-green">
+        <!-- Contact Section-->
+        <section class="page-section" id="keahlian">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Keahlian</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-            </form>            
+                <div class="row mt-5 pt-5 justify-content-center">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/python.webp" height="250px" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Python</h5>
+                              <p class="card-text">Bahasa pemograman yang sangat populer untuk data scientist</p>
+                            </div>
+                            <ul class="list-group list-group-flush" style = 'padding-left: 20px;'>
+                              <li class="list-group-item">Digital Image Processing</li>
+                              <li class="list-group-item">Machine Learning</li>
+                              <li class="list-group-item">Website</li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/js.png" height="250px" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Javascript</h5>
+                              <p class="card-text">Merupakan bahasa pemograman tingkat tinggi dan dinamis</p>
+                            </div>
+                            <ul class="list-group list-group-flush" style = 'padding-left: 20px;'>
+                              <li class="list-group-item">Website</li>
+                              <li class="list-group-item">Testing</li>
+                              <li class="list-group-item">Rest API</li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+            </div>
         </section>
+        <!--Interest Section-->
+        <section class="page-section bg-primary" id="interest">
+            <div class="container">
+                <!--Interest Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ketertarikan</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row mt-5 pt-5 justify-content-center">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/gaming.png" height="250px" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Gaming</h5>
+                              <p class="card-text">Memiliki ketertarikan pada genre game RPG dan FPS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/coding.png" height="250px" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Coding</h5>
+                              <p class="card-text">Menyukai tantangan dan juga perfikir secara sistematik merupakan alasan coding merupakan ketertarikan saya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/movie.png" height="250px" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watching</h5>
+                              <p class="card-text">Kegiatan yang simple namun mendapatkan hiburan dan informasi di saat yang bersamaan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-         <!-- 4Pertama kita buat sebuah variabel formenu mengarah ke id inputform.
-            kemudian formenu kita panggil , kita ubah dan style dan display menjadi none.
-            lalu save - debug
-            "Halaman Form Hilang" 138-139
-
-            5Fungsiberikutnya seperti editform line144-157 dan simpanform line148-150
-            EditForm
-            buat logika pada code menggunakan if dg kondisi awal
-            formMenu style displaynya none maka akan diubah jadi block, selain itu pada else
-            maka tampilannya tetap none.
-            simpan - debug
-
-            6Selanjutnya pada line 164 - 172menampilkan nama masuk dalam form nama dsterusnya. 
-            caranya buat sebuah variable name kita ambil value dengan id yang sudah didefinisikan tadi cth pName, kemudian ambil innerhtml nya lalu
-            pada bagian input nama pada form dg nama id InpName. document.getelementby id
-            lalu ubah value menjadi name yang berasal dari variable yang sudah dibuat diatas. 
-            save - debug
-
-            QUIZ = lakukan untuk file selanjutnya. 
-            save-debug.
-        -->
-
-
-        <script>
-            var formMenu = document.getElementById("input-form");
-            formMenu.style.display="none";
-            
-            function editForm(){
-                if(formMenu.style.display === "none"){
-                    formMenu.style.display = "block";
-                }else{
-                    formMenu.style.display = "none";
-                }
-
-                var name = document.getElementById("pName").innerHTML;
-                var role = document.getElementById("pRole").innerHTML;
-                var available = document.getElementById("pAvailable").innerHTML;
-                var usia = document.getElementById("pAge").innerHTML;
-                var lokasi = document.getElementById("pLocation").innerHTML;
-                var experience= document.getElementById("pExperience").innerHTML;
-                var email = document.getElementById("pEmail").innerHTML;
-
-                document.getElementById("inpName").value=name;
-                document.getElementById("inpRole").value=role;
-                document.getElementById("inpAvailability").value=available;
-                document.getElementById("inpUsia").value=usia;
-                document.getElementById("inpLokasi").value=lokasi;
-                document.getElementById("inpYears").value=experience;
-                document.getElementById("inpEmail").value=email;
-
-            }
-            
-            function simpanForm(){
-
-            }
-
-            function showMenu()
-            {
-                var menu = document.getElementById("menu");
-                var box = document.getElementById("box-profile");
-
-                if(menu.style.display === "block"){
-                    menu.style.display = "none";
-                    box.style.paddingTop = "0px";
-                }else{
-                    menu.style.display = "block";
-                    box.style.paddingTop = "125px";
-                }
-            }
-        </script>
-
-
-
-
-
-
-
+            </div>
+        </section>
+        <!--Award Section-->
+        <section class="page-section" id="award">
+            <div class="container">
+                <!--Award Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Penghargaan</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row mt-5 pt-5 justify-content-center">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">DICODING</h5>
+                              <p class="card-text">Platform belajar yang menyediakan modul, dengan beberapa beasiswa belajar gratis yang disediakan oleh beberapa perusahaan ternama. Berikut beberapa sertifikat yang saya dapatkan:</p>
+                            </div>
+                            <ul class="list-group list-group-flush" style = 'padding-left: 20px;'>
+                                <li class="list-group-item">Belajar Aplikasi Back-End untuk Pemula</li>
+                                <li class="list-group-item">Belajar Dasar Pemograman Javascript</li>
+                                <li class="list-group-item">Architecting on AWS</li>
+                                <li class="list-group-item">Belajar Fundamental Aplikasi Back-End</li>
+                            </ul>
+                          </div>
+                    </div>
+            </div>
+        </section>
+    <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Tuban
+                            <br />
+                            80361
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/manqjayak/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/manqjayak"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                     
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Copyright Section-->
+            <div class="copyright py-4 text-center text-white">
+                <div class="container"><small>Copyright &copy; My Website 2023</small></div>
+            </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
